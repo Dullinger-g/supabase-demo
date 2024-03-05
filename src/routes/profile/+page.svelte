@@ -87,5 +87,5 @@
     </button>
   </form>
   {:else}
-  <div>seems you're not logged in</div>
+  <div>seems you're not logged in</div> 
   {/if}
