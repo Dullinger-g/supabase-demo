@@ -5,11 +5,11 @@
 	import {session, theme} from '$lib/store';
 	onMount(() => {
     supabase.auth.getSession().then(({ data }) => {
-      session = data.session
+      $session = data.session
     })
 
     supabase.auth.onAuthStateChange((_event, _session) => {
-      session = _session
+      $session = _session
     })
   })
 </script>
